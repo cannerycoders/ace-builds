@@ -380,6 +380,7 @@ var themeData = [
     ["Clouds Midnight"      ,"clouds_midnight"         ,  "dark"],
     ["Dracula"              ,""                        ,  "dark"],
     ["Cobalt"               ,"cobalt"                  ,  "dark"],
+    ["GitHub Dark"          ,"githubdark"              ,  "dark"],
     ["Gruvbox"              ,"gruvbox"                 ,  "dark"],
     ["Green on Black"       ,"gob"                     ,  "dark"],
     ["idle Fingers"         ,"idle_fingers"            ,  "dark"],
