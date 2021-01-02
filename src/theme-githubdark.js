@@ -1,103 +1,104 @@
+let codebgd = "#141414";
+let codecolor = "#ccc";
+let inviscolor = "#181818";
+let activebgd = "#202020";
+let selectcolor = "#832563";
+let commentcolor = "#888";
+let k1color = "#ff7b72"; // keyword
+let k2color = "#cc2372"; // storage
+let k3color = "#EBDAB4"; // oeprator
+let c1color = "#79c0ff"; // constant
+let c2color = "#79c0ff"; // constant
+let strcolor = "#3c66e2";
+let v1color = "#fb8764";
+let v2color = "#0099cd";
+let fcolor = "#0099cd";
+let gutterbgd = "#090909";
+let gutterselect = "#181818";
+let guttercolor = "#aaa";
+
 define("ace/theme/githubdark", ["require", "exports", "module", "ace/lib/dom"], function(require, exports, module)
 {
-
     exports.isDark = true;
     exports.cssClass = "ace-githubdark";
-    exports.cssText = "\
-.ace-githubdark .ace_gutter {\
-background: #fbfcfd;\
-color: rgb(127,130,132);\
-}\
-.ace-githubdark  {\
-background: #20272b;\
-color: #dddddd;\
-}\
-.ace-githubdark .ace_keyword {\
-font-weight: bold;\
-}\
-.ace-githubdark .ace_string {\
-color: #3c66e2;\
-}\
-.ace-githubdark .ace_variable.ace_class {\
-color: #cc2372;\
-}\
-.ace-githubdark .ace_constant.ace_numeric {\
-color: #3c66e2;\
-}\
-.ace-githubdark .ace_constant.ace_buildin {\
-color: #3c66e2;\
-}\
-.ace-githubdark .ace_support.ace_function {\
-color: #0086B3;\
-}\
-.ace-githubdark .ace_comment {\
-color: #3c66e2;\
-font-style: italic;\
-}\
-.ace-githubdark .ace_variable.ace_language  {\
-color: #0086B3;\
-}\
-.ace-githubdark .ace_paren {\
-font-weight: bold;\
-}\
-.ace-githubdark .ace_boolean {\
-font-weight: bold;\
-}\
-.ace-githubdark .ace_string.ace_regexp {\
-color: #009926;\
-font-weight: normal;\
-}\
-.ace-githubdark .ace_variable.ace_instance {\
-color: teal;\
-}\
-.ace-githubdark .ace_constant.ace_language {\
-font-weight: bold;\
-}\
-.ace-githubdark .ace_cursor {\
-color: black;\
-}\
-.ace-githubdark.ace_focus .ace_marker-layer .ace_active-line {\
-background: #464a4d;\
-}\
-.ace-githubdark .ace_marker-layer .ace_active-line {\
-background: #464a4d;\
-}\
-.ace-githubdark .ace_marker-layer .ace_selection {\
-background: rgb(181, 213, 255);\
-}\
-.ace-githubdark.ace_multiselect .ace_selection.ace_start {\
-box-shadow: 0 0 3px 0px white;\
-}\
-.ace-githubdark.ace_nobold .ace_line > span {\
-font-weight: normal !important;\
-}\
-.ace-github .ace_marker-layer .ace_step {\
-background: rgb(252, 255, 0);\
-}\
-.ace-github .ace_marker-layer .ace_stack {\
-background: rgb(164, 229, 101);\
-}\
-.ace-github .ace_marker-layer .ace_bracket {\
-margin: -1px 0 0 -1px;\
-border: 1px solid rgb(192, 192, 192);\
-}\
-.ace-github .ace_gutter-active-line {\
-background-color : rgba(0, 0, 0, 0.07);\
-}\
-.ace-github .ace_marker-layer .ace_selected-word {\
-background: rgb(250, 250, 255);\
-border: 1px solid rgb(200, 200, 250);\
-}\
-.ace-github .ace_invisible {\
-color: #BFBFBF\
-}\
-.ace-github .ace_print-margin {\
-width: 1px;\
-background: #e8e8e8;\
-}\
-.ace-github .ace_indent-guide {\
-background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==\") right repeat-y;\
-}";
+    exports.cssText = `
+.ace-githubdark .ace_gutter-active-line {
+background-color: ${gutterselect};
+}
+.ace-githubdark .ace_gutter {
+background: ${gutterbgd};
+color: ${guttercolor};
+}
+.ace-githubdark {
+color: ${codecolor};
+background-color: ${codebgd};
+}
+.ace-githubdark .ace_invisible {
+color: ${inviscolor};
+}
+.ace-githubdark .ace_marker-layer .ace_selection {
+background: ${selectcolor};
+}
+.ace-githubdark.ace_multiselect .ace_selection.ace_start {
+box-shadow: 0 0 3px 0px #002240;
+}
+.ace-githubdark .ace_keyword {
+color: ${k1color};
+}
+.ace-githubdark .ace_comment {
+font-style: italic;
+color: ${commentcolor};
+}
+.ace-githubdark .ace-statement {
+color: red;
+}
+.ace-githubdark .ace_variable {
+color: ${v1color};
+}
+.ace-githubdark .ace_variable.ace_language {
+color: ${v2color};
+}
+.ace-githubdark .ace_constant {
+color: ${c1color};
+}
+.ace-githubdark .ace_constant.ace_language {
+color: ${c2color};
+}
+.ace-githubdark .ace_constant.ace_numeric {
+color: ${c1color};
+}
+.ace-githubdark .ace_string {
+color: ${strcolor};
+}
+.ace-githubdark .ace_support {
+color: ${c1color};
+}
+.ace-githubdark .ace_support.ace_function {
+color: ${fcolor};
+}
+.ace-githubdark .ace_storage {
+color: ${k2color};
+}
+.ace-githubdark .ace_keyword.ace_operator {
+color: ${k3color};
+}
+.ace-githubdark .ace_punctuation.ace_operator {
+color: yellow;
+}
+.ace-githubdark .ace_marker-layer .ace_active-line {
+background: ${activebgd}; 
+}
+.ace-githubdark .ace_marker-layer .ace_selected-word {
+border-radius: 4px;
+border: 8px solid ${selectcolor};
+}
+.ace-githubdark .ace_print-margin {
+width: 5px;
+background: #3C3836;
+}
+.ace-githubdark .ace_indent-guide {
+background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNQUFD4z6Crq/sfAAuYAuYl+7lfAAAAAElFTkSuQmCC\") right repeat-y;
+}`;
 
     var dom = require("../lib/dom");
     dom.importCssString(exports.cssText, exports.cssClass);
