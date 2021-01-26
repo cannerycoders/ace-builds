@@ -422,6 +422,7 @@ function setupSettingPanel(settingDiv, settingOpener, editor) {
             java:       "Java",
             ruby:       "Ruby",
             c_cpp:      "C/C++",
+            ck:         "ChucK",
             coffee:     "CoffeeScript",
             json:       "json",
             perl:       "Perl",
