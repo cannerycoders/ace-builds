@@ -98,8 +98,8 @@ define("ace/mode/chuck_highlight_rules",
             );
 
             var stdFunctions = exports.stdFunctions = "\\b(" +
-                "?:Math|Std|Event|Machine|Shred|RegEx|Object|UGen(?:Multi|Stereo)" +
-                "|Osc|UAna(?:Blob)|Windowing" +
+                "?:Math|Std|Event|Machine|Shred|RegEx|Object|UGen|UGen(?:Multi|Stereo)" +
+                "|Osc|UAna|UAna(?:Blob)|Windowing" +
                 "|ChubGraph|Chugen" +
                 "|Mix2|Pan2|Gain|Impulse|Step|Noise" +
 
