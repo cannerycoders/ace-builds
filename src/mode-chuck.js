@@ -100,7 +100,7 @@ define("ace/mode/chuck_highlight_rules",
             var stdFunctions = exports.stdFunctions = "\\b(" +
                 "?:Math|Std|Event|Machine|Shred|RegEx|Object|UGen|UGen(?:Multi|Stereo)" +
                 "|Osc|UAna|UAna(?:Blob)|Windowing" +
-                "|Chubgraph|Chugen" +
+                "|Chugraph|Chugen" +
                 "|Mix2|Pan2|Gain|Impulse|Step|Noise" +
 
                 "|Phasor|SinOsc|TriOsc|SawOsc|SqrOsc|PulseOsc|SndBuf(?:2)" +
