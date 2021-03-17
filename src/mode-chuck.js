@@ -103,7 +103,7 @@ define("ace/mode/chuck_highlight_rules",
                 "|Chugraph|Chugen" +
                 "|Mix2|Pan2|Gain|Impulse|Step|Noise" +
 
-                "|Phasor|SinOsc|TriOsc|SawOsc|SqrOsc|PulseOsc|SndBuf(?:2)" +
+                "|Phasor|SinOsc|TriOsc|SawOsc|SqrOsc|PulseOsc|SndBuf[2]?" +
                 "|HalfRect|FullRect" +
 
                 "|FilterBasic|BPF|BRF|LPF|HPF|ResonZ|BiQuad" +
