@@ -112,7 +112,7 @@ define("ace/mode/chuck_highlight_rules",
                 "|LiSa|Dyno|CNoise|Gen(?:X|5|7|10|17)" +
                 "|CurveTable|WarpTable" +
 
-                "|ADSR|Envelope|Delay(?:L|A)|Echo|JCRev|NRev" +
+                "|ADSR|Envelope|Delay|Delay(?:L|A)|Echo|JCRev|NRev" +
                 "|PRCRev|Chorus|Modulate|PitShift|SubNoise|BLT|Blit" +
                 "|BlitSaw|BlitSquare|WvIn|WaveLoop|WvOut|StkInstrument" +
                 "|BandedWG|BlowBotl|BlowHole|Bowed|Brass|Clarinet" +
