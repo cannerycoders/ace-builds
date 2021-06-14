@@ -114,7 +114,7 @@ define("ace/mode/chuck_highlight_rules",
 
                 "|ADSR|Envelope|Delay|Delay(?:L|A)|Echo|JCRev|NRev" +
                 "|PRCRev|Chorus|Modulate|PitShift|SubNoise|BLT|Blit" +
-                "|BlitSaw|BlitSquare|WvIn|WaveLoop|WvOut|StkInstrument" +
+                "|BlitSaw|BlitSquare|WvIn|WaveLoop|WvOut|WvOut2|StkInstrument" +
                 "|BandedWG|BlowBotl|BlowHole|Bowed|Brass|Clarinet" +
                 "|Flute|Mandolin|ModalBar|Moog|Saxofony|Shakers|Sitar" +
                 "|StifKarp|VoicForm|FM|BeeThree|FMVoices|HevyMetl" +
